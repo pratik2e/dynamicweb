@@ -1,0 +1,73 @@
+.sidebar {
+  background-color: #000000;
+  width: 280px;
+  height: 100vh;
+  padding-top: 20px;
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding-right: calc(4px + 1ch);
+  border-right: 1px solid;
+}
+
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-list li {
+  margin-bottom: 10px;
+}
+
+.section-list a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.section-list a:hover {
+  background-color: #1da1f2;
+}
+
+.section-list a span {
+  margin-left: 10px;
+}
+
+.tweet-button {
+  background-color: #1da1f2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tweet-button:hover {
+  background-color: #1990db; 
+  padding-right: calc(4px + 1ch);
+}
+
+body{
+  background-color:black;
+
+}
+@media (max-width: 768px){
+  .tweet-button{
+    width: 40%;
+  }
+}
